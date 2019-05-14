@@ -1,0 +1,8 @@
+POST http://localhost:3003/api/blogs/5c9cb84bbdcafaaa90712178/comments
+Content-Type: application/json
+//Hae token ensin kirjautumalla login-pathissa
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbGxhdGVybyIsImlkIjoiNWNhNjA2ZmNlMWE4NmUzNGNkMGNiZTc5IiwiaWF0IjoxNTU3Mzk2Njg4LCJleHAiOjE1NTc0ODMwODh9.3T11-BrEkzXZ3RrFh_cOYcUkOdFnnEyfU7Mqrmend-w
+
+{
+  "text": "toka kommentti"
+}

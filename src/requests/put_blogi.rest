@@ -1,0 +1,7 @@
+PUT http://localhost:3003/api/blogs/5c9cb84bbdcafaaa90712178
+Content-Type: application/json
+
+{
+    "likes": 220,
+    "author": "Virpi M"
+}

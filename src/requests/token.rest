@@ -1,0 +1,24 @@
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username": "sallatero",
+    "password": "salainen"
+}
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+//Hae token ensin kirjautumalla login-pathissa
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbGxhdGVybyIsImlkIjoiNWNhNjA2ZmNlMWE4NmUzNGNkMGNiZTc5IiwiaWF0IjoxNTU0Nzk3NTY5fQ.FOvt46_Q1NvoW5WPMWq78oEFM9Kzp7FVheaEdAzrIto
+
+{
+  "title": "VAVAVAVV",
+  "author": "Anninen",
+  "url": "https://www.anninuunissa.fi/",
+  "likes": 18
+}
+
+### 
+DELETE http://localhost:3003/api/blogs/5ca720ba49d7ca416cb1cc7c
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbGxhdGVybyIsImlkIjoiNWNhNjA2ZmNlMWE4NmUzNGNkMGNiZTc5IiwiaWF0IjoxNTU0NDU4MTUzfQ.Tylb7VxNJ8d7yghiiJ__J4IrPbaGOLmFfUHOzQrQQMw
