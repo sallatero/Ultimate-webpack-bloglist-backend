@@ -6,8 +6,8 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 /* Production modessa
-PORT ja tietokannan url on asetettu ympäristön toimesta.
-Ne luetaan process.env:istä,
+PORT on asetettu ympäristön toimesta ja se luetaan process.env:istä,
+MONGODB_URI on se, joka on asetettu terminaalista
 */
 let PORT = process.env.PORT
 let mongoUrl = process.env.MONGODB_URI
