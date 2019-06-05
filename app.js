@@ -1,4 +1,3 @@
-//const http = require('http')
 const config = require('./src/utils/config')
 const express = require('express')
 const app = express()

@@ -1,7 +1,5 @@
 const listHelper = require('../utils/list_helper')
 
-//jos kirjoitat test.only() tai describe.only(), ajetaan vain tse testi
-
 const longList = [
   {
     _id: '5c9cb7eebdcafaaa90712177',

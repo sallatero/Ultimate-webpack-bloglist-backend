@@ -38,7 +38,7 @@ blogsRouter.post('/', async (request, response, next) => {
 
     //Haetaan käyttäjä kannasta
     const user = await User.findById(decodedToken.id)
-    console.log('etsitään user: ', user) //username, name, id
+    console.log('etsitään user: ', user)
 
     // Lisätään blogiin user-id
     blog.user = user.id
@@ -64,8 +64,6 @@ blogsRouter.post('/', async (request, response, next) => {
   }
 })
 
-//request.body -> { text: "kommenttiteksti" }
-//request.params.id kertoo mikä blogi
 blogsRouter.post('/:id/comments', async (request, response, next) => {
   try {
     console.log('request.body: ', request.body)
@@ -110,7 +108,6 @@ blogsRouter.post('/:id/comments', async (request, response, next) => {
 blogsRouter.delete('/:id', async (request, response, next) => {
 
   try {
-    //decodedToken: {username: <username>, id: <userid>}
     const decodedToken = jwt.verify(request.token, process.env.SECRET)
     console.log('requestToken: ', request.token)
     console.log('decodedToken: ', decodedToken)
@@ -162,7 +159,6 @@ blogsRouter.put('/:id', async (request, response, next) => {
       likes: body.likes,
       comments: oldVersion.comments
     }
-    //const putThis = {...oldVersion, likes: body.likes}
 
     const newVersion = await Blog.findByIdAndUpdate(request.params.id, putThis, { new: true })
     const newBlog = newVersion.toJSON()
