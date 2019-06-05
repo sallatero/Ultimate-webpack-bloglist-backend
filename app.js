@@ -13,6 +13,8 @@ const usersRouter = require('./src/controllers/users')
 
 const logger = require('./src/utils/logger')
 
+app.use(express.static('build'))
+
 app.use(cors())
 app.use(bodyParser.json())
 app.use(requestLogger)
