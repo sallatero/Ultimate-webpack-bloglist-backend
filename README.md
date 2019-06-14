@@ -1,4 +1,4 @@
-<h2> Blog listing app </h2>
+## Blog listing app - backend
 <p>This repository holds the backend to a blog listing app, where users can add blogs they like, comment and like them. All users can see all blogs and comment and like each other's blogs.
 Deleting a blog is only available for the user who added it in the first place.</p>
 
